@@ -4,6 +4,11 @@ from sklearn import datasets
 
 def app():
     st.title('Iris Dataset Summary Page')
+
+    st.write("This is the `New Data` page of the multi-page app.")
+
+    st.write("The following is the DataFrame Summary of the `iris` dataset.")
+
     iris = datasets.load_iris()
 
     X = pd.DataFrame(iris.data, columns = iris.feature_names)
